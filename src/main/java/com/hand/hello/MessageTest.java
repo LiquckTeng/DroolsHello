@@ -22,7 +22,7 @@ public class MessageTest {
     @Test
     public void testHello() throws IOException {
         String url = "http://localhost:8080/kie-drools-wb/maven2/com/hand/hello/1.0/hello-1.0.jar";
-        ReleaseIdImpl releaseId = new ReleaseIdImpl("org.sky.drools", "hello", "LATEST");
+
         KieServices ks = KieServices.Factory.get();
         KieRepository kr = ks.getRepository();
         UrlResource urlResource = (UrlResource) ks.getResources().newUrlResource(url);
